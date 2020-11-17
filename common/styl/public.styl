@@ -1,0 +1,124 @@
+
+
+$url='https://weimaqi.iscan.top/marketing/img/'
+$weimaqi = 'http://cs.weimaqi.net'
+
+$designWidth=750
+$primaryColor = #FF5855
+
+rem($px){
+  $px/1rpx
+}
+font($fontSize){
+  line-height:rem($fontSize + 6)
+  font-size:rem($fontSize)
+  vertical-align middle
+}
+
+bg($path){
+  background url($path) no-repeat center center;
+  background-size contain
+}
+
+bgUrl($path){
+  background url($url $path) no-repeat center center;
+  background-size contain
+}
+
+bgCurl($path){
+  background url($url $path) no-repeat 0 bottom / 100vw 177.866vw;
+}
+
+bgStyle(){
+  background-repeat no-repeat
+  background-position center center
+  background-size contain
+}
+
+flex-d() {
+  display flex
+  flex-direction column
+}
+
+flex-aj(){
+  display flex
+  align-items center
+  justify-content center
+}
+
+flex-ajd(){
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+}
+
+flex-lra(){
+  display flex
+  justify-content space-between
+  align-items center
+}
+
+flex-j(){
+  display flex
+  justify-content center
+}
+
+flex-a(){
+  display flex
+  align-items center
+}
+
+flex-lr(){
+  display flex
+  justify-content space-between
+}
+
+icon($width,$height){
+  display inline-flex
+  width  rem($width)
+  height rem($height)
+  if($height=$width){
+    flex 0 0 rem($width)
+  }
+}
+
+textover(){
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+}
+
+$textColor = #333333
+$textColor2 = #888
+$textColor3 = #999
+
+
+
+// upay
+$upayColor = rgb(14,186,70)
+upayBg(){
+  background-color: $upayColor;
+}
+u-color($a=1){
+  color:rgba(14,186,70,$a)
+}
+flex-daj($direction=row,$align=center,$justify=center){
+  display flex
+  flex-direction $direction
+  align-items $align
+  justify-content $justify
+}
+u-border(){
+  border: 1px solid #fff;
+  border-radius : rem(30)
+  box-shadow: rem(1) rem(1) rem(2) rem(2) #ddd
+  background-color:#fff;
+}
+u-font($size){
+  font-size: rem($size)
+}
+u-WH($w,$h=$w){
+  width:rem($w);
+  height:rem($h);
+}

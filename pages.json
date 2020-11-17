@@ -1,0 +1,25 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "项目基本搭建"
+			}
+		},
+		{
+			"path": "pages/move/index",
+			"style": {
+				"navigationBarTitleText": "虚拟摇杆",
+				"app-plus":{
+					"titleNView": false
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "项目名称",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
